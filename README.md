@@ -34,3 +34,5 @@ Alarmingly cheap microphone with preamp: https://www.amazon.com/dp/B00XT0PH10?ps
 
 Battery: YDL 102050 https://ydlbattery.com/products/3-7v-1000mah-102050-lithium-polymer-ion-battery?variant=42093651787929
 
+JST-PH 2.0 cable for battery: https://www.amazon.com/dp/B07NWNPB77?psc=1&ref=ppx_yo2ov_dt_b_product_details
+
