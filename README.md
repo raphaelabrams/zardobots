@@ -1,7 +1,8 @@
 # zardobots
 simple robots based on Xiao Arduino and mini servos, with analog sensing
 
-#code variants
+
+# code variants
 
 ## Light Follower
 Uses two LDR sensors in voltage divider configuration to generate an analog signal proportional to the illumination difference between them. With an error correction loop a servo can be used to steer the sensor pod toward or away from a light source.
@@ -12,3 +13,7 @@ Use digital signal filters an a microphone input to control the wobbling head an
 ## The Count
 Timer system to show time. Time is the deal here. Like a Time Timer but with a more inscrutable interface.
 
+## Skeleton
+Just a template with the basic housekeeping all done.
+
+# The Rest
