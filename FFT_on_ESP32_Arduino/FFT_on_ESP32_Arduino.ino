@@ -27,7 +27,7 @@ void loop() {
 
     for (int k = 0 ; k < FFT_N ; k++){
       real_fft_plan->input[k] = analogRead(A0);//(float)fft_signal[k];
-      delayMicroseconds(1000);
+      delayMicroseconds(50);
     }
     long int t1 = micros();
     // Execute transformation
