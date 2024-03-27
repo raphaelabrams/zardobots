@@ -15,7 +15,7 @@
 #define TIMERMIN 0 //the lowest number of seconds to count down.
 #define TIMERMAX 180 //what's the longest the time possible for the timing cycle
 #define BUILDPAUSE 2 //higher number slows down the increase in timing cycle when pressing button
-#define COUNTDOWNINCREMENT 1000 //length of a "second"
+#define TICK 1000 //length of a "second"
 #define INDICATEMIN 0 //angles to display the timer
 #define INDICATEMAX 120 
 #define ALERTLOW 10 //low end of wiggling alert at the end of the timing cycle
@@ -67,13 +67,12 @@ void loop() {
   }
   //at this point the button has been released
   if(armed==TRUE && countdown>0){ 
-    int display=0;
-    display= map(countdown, TIMERMIN, TIMERMAX, INDICATEMIN, INDICATEMAX);
+    int display= map(countdown, TIMERMIN, TIMERMAX, INDICATEMIN, INDICATEMAX);
     servo(SERVOPIN,display+JIGGLE);
     servo(SERVOPIN,display);
     countdown--;
-    delay(COUNTDOWNINCREMENT);
-    #ifdef 
+    delay(TICK);
+    #ifdef ECHO
     ECHO Serial.print("t minus "); Serial.println(countdown); Serial.println("...  "); 
     #endif
   }
