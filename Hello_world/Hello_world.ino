@@ -1,9 +1,10 @@
 //Hello World!
 //Raphael Abrams, March 2024
-
+#define INPIN D1
 #define LEDPIN D8 //which physical pin is the servo attached to
 
 void setup() {
+  pinMode(INPIN, INPUT_PULLUP);
   pinMode(LEDPIN, OUTPUT);
 }
 

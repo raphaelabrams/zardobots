@@ -2,18 +2,29 @@
 simple robots based on Xiao Arduino and mini servos, with analog sensing
 
 
-# code variants
+# code 
+
+## Hello world
+Start here! Blink an LED. This will verify that we have a working toolchain.
+
+## Button test
+add a button to test input functionality
+
+## Monitor sensor
+test analog input and serial debug output
+
+## servo test
+move a servo through a full range of angles, calibrate if needed
+
+## Time timer
+Timer system to show time. Time is the deal here. Like a Time Timer but with a more inscrutable interface.
+
 ## Light Follower
 Uses two LDR sensors in voltage divider configuration to generate an analog signal proportional to the illumination difference between them. With an error correction loop a servo can be used to steer the sensor pod toward or away from a light source.
 
-## Zardoz!
+## Zardoz! (bonus round)
 Use digital signal filters and a microphone input to control the wobbling head and glowing eyes of everyone's favorite late stage post futuristic floating apocalyptic murder idol.
 
-## The Count
-Timer system to show time. Time is the deal here. Like a Time Timer but with a more inscrutable interface.
-
-## Skeleton
-Just a template with the basic housekeeping all done.
 
 
 # The Rest
@@ -23,7 +34,8 @@ These are the STL files you can use to print out more parts if you like.
 ## Schematics
 Diagrams to show electrical connections for each project
 
-## Partial BOM
+
+# Partial BOM
 Arduino: https://www.mouser.com/ProductDetail/713-113991054
 
 Servo: https://www.mouser.com/ProductDetail/426-SER0053
