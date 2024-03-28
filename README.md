@@ -34,7 +34,7 @@ Here's a link to the guide from Seeed in case there's trouble getting things wor
 https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
 ### solder an LED and resistor
 use "Hello World" code
-###solder a button
+### solder a button
 use "button test" code
 ### solder a servo and battery cable to board
 use "servo test" code
