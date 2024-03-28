@@ -10,14 +10,17 @@ Start here! Blink an LED. This will verify that we have a working toolchain.
 ## Button test
 add a button to test input functionality
 
-## Monitor sensor
-test analog input and serial debug output
-
 ## servo test
+Attach the battery wires, with branch for servo
 move a servo through a full range of angles, calibrate if needed
 
 ## Time timer
 Timer system to show time. Time is the deal here. Like a Time Timer but with a more inscrutable interface.
+
+
+## Monitor sensor
+Attach the analog sensor
+Test analog input and serial debug output
 
 ## Light Follower
 Uses two LDR sensors in voltage divider configuration to generate an analog signal proportional to the illumination difference between them. With an error correction loop a servo can be used to steer the sensor pod toward or away from a light source.
