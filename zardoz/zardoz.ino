@@ -3,14 +3,14 @@
 #define ANALOGIN A0
 #define LEDPIN D10
 
-#define HUMHIGH 480  //frequency in Hz
-#define HUMLOW 420
+#define HUMHIGH 340  //frequency in Hz
+#define HUMLOW 270
 #define ZARDOZ_IS_PLEASED 90  //angle of the servo in degrees
-#define ZARDOZ_IS_DISPLEASED 0
+#define ZARDOZ_IS_DISPLEASED -90
 
 #include "FFT.h" // include the library (its here in the folder, not a built in library)
-#define FFT_N 2048 // Must be a power of 2
-#define TOTAL_TIME .1250 //The time in which data was captured. This is equal to FFT_N/sampling_freq
+#define FFT_N 1024 // Must be a power of 2
+#define TOTAL_TIME .0636 //The time in which data was captured. This is equal to FFT_N/sampling_freq
 float fft_input[FFT_N];
 float fft_output[FFT_N];
 
@@ -21,6 +21,7 @@ void setup() {
   Serial.begin(115200); // use the serial port
   delay(1000);
   pinMode(LEDPIN, OUTPUT);
+  pinMode(SERVOPIN, OUTPUT);
 }
 
 void loop() {
@@ -68,9 +69,9 @@ void loop() {
     Serial.println(angle);
     servo(SERVOPIN, angle);
     if ((fundamental_freq>HUMLOW) && (fundamental_freq<HUMHIGH)){
-      angle++;
+      angle+=20;
     }else{
-      angle--;
+      angle=ZARDOZ_IS_DISPLEASED;
     }  
     angle=constrain(angle,ZARDOZ_IS_DISPLEASED,ZARDOZ_IS_PLEASED);  
     if(angle==ZARDOZ_IS_PLEASED){
@@ -90,4 +91,5 @@ void servo(int pin, int angle){
   digitalWrite(pin, HIGH); 
   delayMicroseconds(angle); //servo pulse high side duration
   digitalWrite(pin, LOW);
+  delay(30);
 }
