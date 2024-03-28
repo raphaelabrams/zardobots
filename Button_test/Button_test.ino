@@ -1,5 +1,5 @@
 #define INPIN D1
-#define LEDPIN D8
+#define LEDPIN D10
 void setup() {
   pinMode(INPIN, INPUT_PULLUP);
   pinMode(LEDPIN, OUTPUT);

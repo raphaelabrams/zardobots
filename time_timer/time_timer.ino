@@ -3,9 +3,9 @@
 
 //#define ECHO  //if you want serial feedback, uncomment and use a serial monitor
 
-#define INPIN D0 //physical pin for button
+#define INPIN D1 //physical pin for button
 #define SERVOPIN D7 //which physical pin is the servo attached to
-#define LEDPIN D8 //which physical pin is the servo attached to
+#define LEDPIN D10 //which physical pin is the LED attached to
 #define SERVO_PULSE_MIN 500 //the shortest pulsewidth for servo control
 #define SERVO_PULSE_MAX 2600 //the longest pulsewidth for servo control
 #define ANGLEMIN -150 //angle measured in degrees

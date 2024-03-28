@@ -6,6 +6,7 @@
 #define SENSOR A0
 #define SERVOPIN D7
 
+
 void centering_loop(int speed, int direction, int anglemin, int anglemax, int framedelay, int deadband);
 void servo(int pin, int angle);
 

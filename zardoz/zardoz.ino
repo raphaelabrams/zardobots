@@ -1,11 +1,11 @@
 
 #define SERVOPIN D7
 #define ANALOGIN A0
-#define LEDPIN D8
+#define LEDPIN D10
 
-#define HUMHIGH 480
+#define HUMHIGH 480  //frequency in Hz
 #define HUMLOW 420
-#define ZARDOZ_IS_PLEASED 90
+#define ZARDOZ_IS_PLEASED 90  //angle of the servo in degrees
 #define ZARDOZ_IS_DISPLEASED 0
 
 #include "FFT.h" // include the library (its here in the folder, not a built in library)
