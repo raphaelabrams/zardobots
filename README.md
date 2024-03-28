@@ -26,6 +26,11 @@ Uses two LDR sensors in voltage divider configuration to generate an analog sign
 Use digital signal filters and a microphone input to control the wobbling head and glowing eyes of everyone's favorite late stage post futuristic floating apocalyptic murder idol.
 
 
+## Tool Setup
+Here's a link to the guide from Seeed in case there's trouble getting things working
+https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+
+
 
 # The Rest
 ## 3D files
