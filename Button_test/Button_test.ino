@@ -6,8 +6,9 @@ void setup() {
 }
 
 void loop() {
+  int speed=0;
   if(digitalRead(INPIN)==1){
-    speed=200
+    speed=200;
   }else{
     speed=500;
   }
