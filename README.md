@@ -26,9 +26,23 @@ Uses two LDR sensors in voltage divider configuration to generate an analog sign
 Use digital signal filters and a microphone input to control the wobbling head and glowing eyes of everyone's favorite late stage post futuristic floating apocalyptic murder idol.
 
 
-## Tool Setup
+
+
+# Schedule:
+### install, setup, intros, settle in
 Here's a link to the guide from Seeed in case there's trouble getting things working
 https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
+### solder an LED and resistor
+use "Hello World" code
+###solder a button
+use "button test" code
+### solder a servo and battery cable to board
+use "servo test" code
+### attach photocells to servo horn (ladyhead or paddle), solder to board
+use "monitor sensor" code, serial monitor or graph
+use "light follower" code, work with defines to tweak
+### time to decorate and mess with code
+### if there's any time left, we can do a few zardoz units, have a whistling party
 
 
 
