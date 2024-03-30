@@ -3,7 +3,7 @@
 //Lightfollower//
 //Raphael Abrams, March 2024
 
-#define SENSOR A0
+#define SENSOR D0
 #define SERVOPIN D7
 
 
@@ -59,7 +59,7 @@ void loop() {
   //servo maximum angle 90 
   //frame delay (in mS) 30
   //deadband, in degrees 2
-  centering_loop(4, 1, -90, 90, 30, 1); 
+  centering_loop(4, -1, -90, 90, 30, 1);
 }
 
 
