@@ -64,7 +64,7 @@ Servo: https://www.mouser.com/ProductDetail/426-SER0053
 
 LDR: NTE part# 02-LDR23
 
-Alarmingly cheap microphone with preamp: https://www.amazon.com/dp/B00XT0PH10?psc=1&ref=ppx_yo2ov_dt_b_product_details
+Alarmingly cheap microphone with preamp: https://www.amazon.com/dp/B07VY7V8RR?psc=1&ref=ppx_yo2ov_dt_b_product_details
 
 Battery: YDL 102050 https://ydlbattery.com/products/3-7v-1000mah-102050-lithium-polymer-ion-battery?variant=42093651787929
 
